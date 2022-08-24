@@ -1,0 +1,92 @@
+body {
+  width: 60%;
+  margin: auto;
+}
+
+/* 1st section */
+#dwnl1 {
+  width: 90%;
+  margin: 120px auto 0px;
+  text-align: center;
+}
+#dwnl1 > p {
+  font-size: 45px;
+  line-height: 20px;
+}
+#dwnl1 > p + p {
+  font-size: 25px;
+  color: gray;
+}
+#dwnl1 > a {
+  text-decoration: none;
+  color: #54adf5;
+  font-size: 20px;
+  padding: 7px;
+  line-height: 40px;
+}
+#dwnl1 > a:hover {
+  text-decoration: underline;
+}
+#dwnl1 > span {
+  color: gray;
+  font-size: large;
+}
+#dwnl1 > div {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+#dwnl1 > div > button {
+  border: 0cm;
+  border-radius: 5%;
+  color: gray;
+  background-color: #e1f5fe;
+  padding: 1% 1.5%;
+  margin: 6px;
+}
+#dwnl1 > div > button:hover {
+  color: white;
+  background-color: #54adf5;
+}
+
+/* 2nd section */
+#dwnl2 {
+  width: 95%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#dwnl2 > img {
+  width: 48%;
+}
+#dwnl2 > div {
+  width: 48%;
+  padding: 6%;
+  line-height: 0px;
+}
+#dwnl2 > div > p {
+  font-size: 36px;
+}
+#dwnl2 > div > p + p {
+  color: grey;
+  font-size: large;
+  line-height: 50px;
+}
+#dwnl2 > div > a {
+  padding-right: 3%;
+  line-height: 45px;
+}
+a > img:hover {
+  transform: scale(1.05);
+}
+
+/* 5th section */
+#dwnl2 > div > p + p + p {
+  font-size: medium;
+  line-height: 0px;
+}
+.link1 {
+  text-decoration: none;
+  font-size: large;
+  color: #54adf5;
+}
