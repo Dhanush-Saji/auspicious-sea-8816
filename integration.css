@@ -1,11 +1,6 @@
 
-/* h3{
-    display:block;
-    margin-top: 40px;
-} */
 .content_data>div{
-    text-align: center;
-    
+    text-align: center;    
 }
 .content_data>div>img{
     width:100%;
@@ -22,26 +17,56 @@ hr{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
+#bottom_portion1{
+    margin-top: 10em;
+    padding:8% 1% 8% 1%;
+    background-color: #f7fcff;
+}
+#bottom_portion>button{
+    background-color: #0288D1;
+    border: 0px;
+    color: white;
+    height:8%; 
+    width:20em;
+    border-radius: 5px;
+    margin-top: 2%;
+    justify-content: center;
+    cursor: pointer;
+}
 
 
 @media (min-width:768px){
-    body{
-        /* width:80%; */
-        margin:auto;
-        padding:1% 20% 1% 20%;
-        justify-content: center;
+    .top_portion{
+        margin:1% 20% 1% 20%;
         align-items: center;
+    }
+    .content_box{
+        margin:1% 20% 1% 20%;
     }
     .content_data{
         display: grid;
         margin-top: 40px;
+        margin-bottom: 20px;
         grid-template-columns: repeat(5,1fr);
-        /* margin:10px 300px 100px 300px; */
         column-gap:20px;
         row-gap: 20px;
        
     }
+    #bottom_portion{
+        margin:auto;
+        font-size: larger;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: flex;
+        width:35%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    
+
 }
 
 @media (min-width:481px) and (max-width:768px){
@@ -57,6 +82,18 @@ hr{
     body{
         padding:10px 40px 20px 40px ;
     }
+    
+    #bottom_portion{
+        margin:auto;
+        font-size: medium;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: none;
+    }
+   
 }
 @media (max-width:480px){
     .content_data{
@@ -69,4 +106,17 @@ hr{
     body{
         padding: 5px 20px 5px 20px;
     }
+   
+    #bottom_portion{
+        margin:auto;
+        font-size: smaller;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: none;
+        
+    }
+   
 }
