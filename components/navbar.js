@@ -21,8 +21,8 @@ function navbar(){
       <button class="signUp">SIGN UP FREE</button>
     </a>
   </div>
-  <i class="fa-solid fa-bars" id="mobileMenuOpen"></i>
-  <i class="fa-solid fa-xmark" id="mobileMenuClose"></i>`;
+  <i class="fa-solid fa-bars " id="mobileMenuOpen" data-open=1 onclick="toggleMenu()"></i>
+  <i class="fa-solid fa-xmark" id="mobileMenuClose" data-close=0 onclick="toggleMenu()"></i>`;
 };
 
 function mobNavbar(){
