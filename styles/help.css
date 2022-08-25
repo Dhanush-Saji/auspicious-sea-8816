@@ -4,7 +4,11 @@
   padding-top: 30px;
   padding-bottom: 60px;
 }
-#input > input[type="text"] {
+#input>div{
+  display: flex;
+  position: relative;
+}
+#input >div> input[type="text"] {
   width: 55%;
   height: 40px;
   border-radius: 8px;
@@ -13,18 +17,17 @@
   margin: auto;
   display: flex;
   border: none;
-  position: relative;
   padding-right: 50px;
 }
 
-#input > button {
+#input >div> button {
   position: absolute;
-  top: 20.7%;
+  top: 20%;
   right:23%;
   width: 120px;
   text-align: center;
   height: 40px;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
   color: #03a9f4;
@@ -32,15 +35,13 @@
   border: none;
   border-radius: 20px;
 }
-#input > img {
+#input >div> img {
   position: absolute;
-  top: 21%;
-  right: 22%;
-  /* width: 120px; */
-  text-align: center;
-  height: 35px;
+  width: 35px;
+  top: 25%;
+  right: 21.5%;
 }
-#input > img:hover {
+#input >div> img:hover {
   animation: mymove 5s infinite;
 }
 #input > p {
@@ -55,7 +56,6 @@
   display: grid;
   margin: auto;
   margin-top: 30px;
-  /* grid-template-columns: repeat(3, 1fr); */
   grid-template-areas:
     "a1 b1 c1"
     "d1 e1 f1"
@@ -168,28 +168,11 @@
     padding-top: 30px;
     padding-bottom: 60px;
   }
-  #input > button {
-    position: absolute;
-    top: 25.7%;
-    right:23%;
-    width: 120px;
-    text-align: center;
-    height: 40px;
+  #input >div> button {
     font-size: 16px;
-    line-height: 24px;
-    font-family: "Roboto", sans-serif;
-    color: #03a9f4;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
   }
-  #input > img {
-    position: absolute;
-    top: 26%;
-    right: 22%;
-    /* width: 120px; */
-    text-align: center;
-    height: 35px;
+  #input >div> img {
+    font-size: 18px;
   }
   #container {
     width: 90%;
@@ -214,29 +197,4 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-}
-
-@media all and (min-width: 979px) and (max-width: 1241px) {
-    #input > button {
-        position: absolute;
-        top: 27%;
-        right:23%;
-        width: 120px;
-        text-align: center;
-        height: 40px;
-        font-size: 16px;
-        line-height: 24px;
-        font-family: "Roboto", sans-serif;
-        color: #03a9f4;
-        background-color: white;
-        border: none;
-        border-radius: 20px;
-      }
-      #input > img {
-        position: absolute;
-        top: 28%;
-        right: 22%;
-        text-align: center;
-        height: 35px;
-      }
 }
