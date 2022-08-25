@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Download</title>
     <script src="https://kit.fontawesome.com/04cd54677b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./styles/download.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
     <div id="navbar"></div>
+    <div id="mobNavbar" data-mobNavbar="0"></div>
     <!-- 1st section -->
     <div id="dwnl1">
       <p>Time tracking apps</p>
@@ -169,5 +174,19 @@
       </div>
     </div>
     <hr />
+    <div id="footer" ></div>
+    <script type="module">
+      import {navbar,mobNavbar} from './components/navbar.js'
+      let navbarContainer = document.querySelector("#navbar");
+      navbarContainer.innerHTML = navbar();
+      
+      let mobnavbarContainer = document.querySelector("#mobNavbar");
+      mobnavbarContainer.innerHTML = mobNavbar();
+      
+      import footer from './components/footer.js'
+      let footerContainer = document.querySelector("#footer");
+      footerContainer.innerHTML = footer;
+    </script>
+    <script src="./scripts/navbar.js"></script>
   </body>
 </html>
