@@ -118,3 +118,15 @@
 #tut3 > a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  #tut3 {
+    padding: 40px 0;
+  }
+  #tut3 > p:nth-child(2) {
+    display: none;
+  }
+  #tut3 > button {
+    margin-top: 0px;
+  }
+}

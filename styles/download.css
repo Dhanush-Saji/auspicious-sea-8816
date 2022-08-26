@@ -1,28 +1,21 @@
-body {
-  width: 60%;
-  margin: auto;
-}
-
 /* 1st section */
 #dwnl1 {
-  width: 90%;
-  margin: 120px auto 0px;
+  width: 54%;
+  margin: 50px auto;
   text-align: center;
 }
-#dwnl1 > p {
-  font-size: 45px;
-  line-height: 20px;
+#dwnl1 > p:first-child {
+  font-size: 40px;
 }
-#dwnl1 > p + p {
-  font-size: 25px;
+#dwnl1 > p:nth-child(2) {
   color: gray;
+  font-size: 21px;
 }
 #dwnl1 > a {
   text-decoration: none;
   color: #54adf5;
-  font-size: 20px;
+  font-size: 18px;
   padding: 7px;
-  line-height: 40px;
 }
 #dwnl1 > a:hover {
   text-decoration: underline;
@@ -51,7 +44,7 @@ body {
 
 /* 2nd section */
 #dwnl2 {
-  width: 95%;
+  width: 54%;
   margin: 100px auto;
   display: flex;
   justify-content: space-between;
@@ -62,15 +55,12 @@ body {
 #dwnl2 > div {
   width: 48%;
   padding: 6%;
-  line-height: 0px;
 }
-#dwnl2 > div > p {
+#dwnl2 > div > p:first-child {
   font-size: 36px;
 }
-#dwnl2 > div > p + p {
+#dwnl2 > div > p:nth-child(2) {
   color: grey;
-  font-size: large;
-  line-height: 50px;
 }
 #dwnl2 > div > a {
   padding-right: 3%;
@@ -79,14 +69,75 @@ body {
 a > img:hover {
   transform: scale(1.05);
 }
+hr {
+  margin: auto 22%;
+}
+
+@media (max-width: 768px) {
+  #dwnl2 {
+    display: block;
+  }
+  #dwnl2 > img {
+    width: 100%;
+  }
+  #dwnl2 > div {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
 
 /* 5th section */
-#dwnl2 > div > p + p + p {
-  font-size: medium;
-  line-height: 0px;
+#dwnl2 > div > p:nth-child(3) {
+  color: gray;
+  font-size: small;
 }
 .link1 {
   text-decoration: none;
-  font-size: large;
   color: #54adf5;
+  font-size: large;
+}
+
+/* 7th section */
+#tut3 {
+  background-color: #f7fcff;
+  padding: 100px 0 150px 0;
+  text-align: center;
+}
+#tut3 > p:first-child {
+  font-size: 32px;
+}
+#tut3 > p:nth-child(2) {
+  color: gray;
+}
+#tut3 > button {
+  color: white;
+  background-color: #0288d1;
+  border: none;
+  border-radius: 3%;
+  font-size: 17px;
+  padding: 20px 50px;
+  margin-top: 40px;
+}
+#tut3 > button:hover {
+  background-color: #3f55b2;
+}
+#tut3 > a {
+  color: #0288d1;
+  font-size: small;
+}
+#tut3 > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #tut3 {
+    padding: 40px 0;
+  }
+  #tut3 > p:nth-child(2) {
+    display: none;
+  }
+  #tut3 > button {
+    margin-top: 0px;
+  }
 }
