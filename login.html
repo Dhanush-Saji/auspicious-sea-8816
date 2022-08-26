@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+           body{
+        
+        font-family: 'Roboto', sans-serif;
+        background-color: #F8FDFE;
+       
+    }
+        .formhold{
+            border-radius: 10px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            width: 380px;
+            height: 300px;
+            padding: 10px;
+            background-color: #FFFFFF;
+        }
+        .unandpass{
+            display: block;
+            margin: auto;
+           height:30px;
+           width:312px;
+            margin-bottom:20px;
+        }
+        button{
+            background-color: #338FCF;
+            color: #FFFFFF;
+            height:40px;
+            width:322px;
+            margin: auto;
+            border: #FFFFFF 1px solid;
+            display: block ;
+            margin-top: 9px;
+        }
+        h4{
+            font-size: 25px;
+            text-align: left;
+            margin-left: 30px;
+            font-weight: 500;
+        }
+        .container{
+            display: block;
+            margin: auto;
+           height:30px;
+           width:312px;
+           text-align: left;
+           font-size: 14px;
+        }
+        
+        
+    </style>
+    <title>Log in</title>
+</head>
+<body>
+    <div class="formhold">
+        <h4>Log in</h4>
+    <input class="unandpass" type="text" id="username" placeholder=" Enter Username"/>
+    <input type="text"class="unandpass"  id="password" placeholder=" Enter Password"/>
+    
+    <label class="container">
+        <input type="checkbox"> Stay logged in
+        <span class="checkmark"></span>
+      </label>
+    <button onclick="logIN()">Log In</button></div>
+</div>
+</body>
+</html>
+<script>
+    let logins=JSON.parse(localStorage.getItem("logins")) || [];
+let nowlogin=JSON.parse(localStorage.getItem("nowlogin")) || 0;
+class User{
+    //#username;
+    //#password;
+    constructor(){
+        this.organization='masai';     
+    }
+    login(username,password){
+        
+    var logged=1
+        for(let i=0; i<logins.length;i++){
+            if(username==logins[i],username && password==logins[i].password){
+                alert("Login Successful")
+                nowlogin=1;
+                logged=0;
+                localStorage.setItem("nowlogin",JSON.stringify(nowlogin));
+            }
+        }
+
+        if(logged==1){
+            alert("login failed");
+        }
+    }
+}
+function logIN(){
+    let username=document.getElementById('username').value;
+    let password=document.getElementById('password').value;
+    let s1= new User();
+    s1.login(username,password);
+}
+</script>
