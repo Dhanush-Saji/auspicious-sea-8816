@@ -28,17 +28,27 @@ h2{
     border:1px solid #EFF4F7;
     width:95%;
 }
+.pricing_box:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 #popular{
     height:105%;
     margin-top: -6%;
     border: 0.5px solid green;
     text-align: center;
+    
     /* align-items: center; */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     width:103%;
 }
+#popular:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 #popular>div{
     position: relative;
+    background-color: white;
+    
+    
     top:-2.6%;
     width:60%;
     height:5%;
