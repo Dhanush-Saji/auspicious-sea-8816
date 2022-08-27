@@ -18,10 +18,10 @@ function footer(){
     <div class="footerRight">
         <div>
             <label for="">PRODUCT</label>
-            <a href="#">Features</a>
-            <a href="#">Download</a>
-            <a href="#">Integrations</a>
-            <a href="#">Upgrade</a>
+            <a href="./features.html">Features</a>
+            <a href="./download.html">Download</a>
+            <a href="./integration.html">Integrations</a>
+            <a href="./upgrade.html">Upgrade</a>
             <a href="#">API</a>
         </div>
         <div>
@@ -34,7 +34,7 @@ function footer(){
         </div>
         <div>
             <label for="">COMPANY</label>
-            <a href="#">About us</a>
+            <a href="./about.html">About us</a>
             <a href="#">Customers</a>
             <p class="also">WE ALSO MAKE</p>
             <div>
@@ -48,8 +48,8 @@ function footer(){
         </div>
         <div>
             <label for="">SUPPORT</label>
-            <a href="#">Help</a>
-            <a href="#">Tutorials</a>
+            <a href="./help.html">Help</a>
+            <a href="./tutorials.html">Tutorials</a>
             <a href="#">Resources</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>

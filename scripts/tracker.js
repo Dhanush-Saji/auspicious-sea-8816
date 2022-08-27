@@ -1,3 +1,13 @@
+let logins=JSON.parse(localStorage.getItem("logins")) || [];
+let name = document.getElementById("name");
+let showName = (logins,name)=> {
+  logins.forEach(el => {
+    let user = el.username;
+    name.innerText = user
+    console.log(user);
+  });
+}
+showName(logins,name);
 let save = document.getElementById("timer");
 let input = document.getElementById("enter");
 let interval = null;
