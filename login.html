@@ -15,7 +15,8 @@
             border-radius: 10px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 100px;
+            margin-bottom: 100px;
             text-align: center;
             width: 380px;
             height: 300px;
@@ -57,8 +58,17 @@
         
     </style>
     <title>Log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
+      <script src="https://kit.fontawesome.com/04cd54677b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 </head>
 <body>
+    <div id="navbar"></div>
+    <div id="mobNavbar" data-mobNavbar="0"></div>
     <div class="formhold">
         <h4>Log in</h4>
     <input class="unandpass" type="text" id="username" placeholder=" Enter Username"/>
@@ -70,6 +80,21 @@
       </label>
     <button onclick="logIN()">Log In</button></div>
 </div>
+<div id="footer" ></div>
+</div>
+<script type="module">
+  import {navbar,mobNavbar} from './components/navbar.js'
+  let navbarContainer = document.querySelector("#navbar");
+  navbarContainer.innerHTML = navbar();
+  
+  let mobnavbarContainer = document.querySelector("#mobNavbar");
+  mobnavbarContainer.innerHTML = mobNavbar();
+  
+  import footer from './components/footer.js'
+  let footerContainer = document.querySelector("#footer");
+  footerContainer.innerHTML = footer;
+</script>
+<script src="./scripts/navbar.js"></script>
 </body>
 </html>
 <script>
