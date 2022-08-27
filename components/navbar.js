@@ -1,7 +1,7 @@
 function navbar(){
     return `<ul class="navbarLeft">
     <li>
-      <a href="#">
+      <a href="./index.html">
         <img
           src="https://clockify.me/assets/images/clockify-logo.svg"
           alt="error"
