@@ -66,11 +66,11 @@ function footer(){
         <p><a href="#">Security</a></p>
     </div>
     <div>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
     </div>
     <div>
         <p>COING Inc, 2100 Geng Road, Suite 210, Palo Alto, CA 94303, USA,<span class="num"> +1-855-738-8741</span></p>
