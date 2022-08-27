@@ -10,6 +10,8 @@ h2{
     grid-template-columns: repeat(4,1fr);
     /* border: 1px solid; */
     padding: 1% 0% 3% 0%;
+    border: 1px solid;
+    
     
     margin:4% 12% 2% 12%;
     /* background-color: aqua; */
@@ -130,7 +132,7 @@ li{
 }
 
 
-@media (min-width:481px) and (max-width:768px){
+@media all and (min-width:481px) and (max-width:768px){
     .pricing_plans{
         display: grid;
         grid-template-columns: repeat(2,1fr);
