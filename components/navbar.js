@@ -9,15 +9,15 @@ function navbar(){
       </a>
     </li>
     <li>
-      <a href="#">FEATURES</a>
+      <a href="./features.html">FEATURES</a>
     </li>
     <li>
-      <a href="#">DOWNLOAD</a>
+      <a href="./download.html">DOWNLOAD</a>
     </li>
   </ul>
   <div class="navbarRight">
-    <a href="#" id="login">LOG IN</a>
-    <a href="#" id="signup">
+    <a href="login.html" id="login">LOG IN</a>
+    <a href="./signup.html">
       <button class="signUp">SIGN UP FREE</button>
     </a>
   </div>
@@ -26,10 +26,10 @@ function navbar(){
 };
 
 function mobNavbar(){
-  return `<li><a href="#">FEATURES</a></li>
-  <li><a href="#">DOWNLOAD</a></li>
-  <li><a href="#" id="mobLogin">LOG IN</a></li>
-  <li><button class="mobSignUp">SIGN UP FREE</button></li>`;
+  return `<li><a href="./features.html">FEATURES</a></li>
+  <li><a href="./download.html">DOWNLOAD</a></li>
+  <li><a href="login.html" id="mobLogin">LOG IN</a></li>
+  <li onClick="sign()"><button class="mobSignUp">SIGN UP FREE</button></li>`;
 };
 
 export  {navbar,mobNavbar}
