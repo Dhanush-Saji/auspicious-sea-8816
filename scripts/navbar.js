@@ -18,3 +18,6 @@ function toggleMenu(){
         menuClose.dataset.close = "0"
     }
 }
+function sign(){
+    window.location.href = "./signup.html";
+};
