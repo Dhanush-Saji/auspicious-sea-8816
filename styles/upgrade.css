@@ -8,12 +8,14 @@ h2{
 .pricing_plans{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    width:80%;
+    margin: auto;
     /* border: 1px solid; */
     padding: 1% 0% 3% 0%;
-    border: 1px solid;
+    /* border: 1px solid; */
     
     
-    margin:4% 12% 2% 12%;
+    /* margin:4% 12% 2% 12%; */
     /* background-color: aqua; */
 }
 .pricing_box>p:nth-child(-n+2){
@@ -105,17 +107,21 @@ li{
 }
 .lower_topsection{
     text-align: center;
-    margin:4% 12% 5% 12%;
+    /* margin-top: 10%; */
+    width:80%;
+    margin:3% auto 4% auto;
 }
 .faq{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    width:80%;
     column-gap: 10%;
-    margin:4% 12% 5% 12%;
+    margin:auto;
 }
 
 .customer{
-    margin:4% 12% 5% 12%;
+    width:80%;
+    margin:4% auto 4% auto;
     text-align: center;
 }
 .rating{
@@ -130,25 +136,109 @@ li{
 .customer>img{
     width:90%;
 }
+.basic{
+    width:60%;
+    margin:10% auto auto auto;
+}
+.basic>hr{
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.basic>div+p{
+    margin-top: 10%;
+}
+.basic>div>h3>a{
+    margin-right: 3%;
+}
+.basic>img{
+    width:100%;
+}
+#bottom_portion1{
+    margin-top: 10em;
+    padding:8% 1% 8% 1%;
+    background-color: #f7fcff;
+}
+#bottom_portion>button{
+    background-color: #0288D1;
+    border: 0px;
+    color: white;
+    height:8%; 
+    width:20em;
+    border-radius: 5px;
+    margin-top: 2%;
+    justify-content: center;
+    cursor: pointer;
+}
+#bottom_portion{
+    margin:auto;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#bottom_portion>div{
+    display: flex;
+    width:35%;
+    margin: auto;
+    justify-content: space-between;
+}
+#upgrade{
+    background-color: #0288D1;
+    font-size: larger;
+    color: white;
+    width:25%;
+    height:auto;
+    /* height: auto; */
+    border-radius: 5px;
+    margin: auto;
+   padding-top:1%;
+   padding-bottom: 1%;
+    text-align: center;
+    border: 0px;
+}
 
 
-@media all and (min-width:481px) and (max-width:768px){
+@media screen and (min-width:481px) and (max-width:768px){
     .pricing_plans{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         row-gap: 30px;
         /* border:1px solid red; */
-        width:80%;
+        width:90%;
         /* margin:1% 5% 1% 5%; */
     }
     .faq{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         /* column-gap: 10%; */
-        margin:4% 12% 5% 12%;
+        
+    }
+    
+    .customer{
+        width: 95%;
+        margin:4% auto 4% auto;
+        
+    }
+    .basic{
+        width:80%;
+        margin: auto;
+    }
+    #bottom_portion{
+        margin:auto;
+        font-size: medium;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: none;
+    }
+    #upgrade{
+        font-size: medium;
     }
 }
-@media (max-width:480px){
+@media screen and (max-width:480px){
+    
     .pricing_plans{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -160,5 +250,27 @@ li{
         grid-template-columns: repeat(1,1fr);
         column-gap: 10%;
         margin:4% 12% 5% 12%;
+    }
+    .customer{
+        width:95%;
+        margin:1% auto 1% auto;;
+    }
+    #bottom_portion{
+        margin:auto;
+        font-size: smaller;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: none;
+        
+    }
+    .basic{
+        width:80%;
+        margin: auto;
+    }
+    #upgrade{
+        font-size: smaller;
     }
 }
