@@ -1,3 +1,7 @@
+let goTo = () => {
+  window.location.href="index.html"
+}
+
 let logins=JSON.parse(localStorage.getItem("logins")) || [];
 let name = document.getElementById("name");
 let showName = (logins,name)=> {
